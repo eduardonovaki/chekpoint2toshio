@@ -7,7 +7,7 @@ int main() {
     scanf("%f", &nota1);
 
     printf("Digite a segunda nota: ");
-    scanf("%f", nota2);
+    scanf("%f", &nota2);   //adicionado &
 
     media = (nota1 + nota2) / 2; // adicionei parenteses na expressão para fazer sentido
 
