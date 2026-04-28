@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 void calcularDerivada() {
-    // Para uma função simples: f(x) = ax^n -> f'(x) = (a*n)x^(n-1)
+    
     float coeficiente;
     int expoente;
 
@@ -21,13 +21,23 @@ void calcularDerivada() {
 }
 
 void calcularMedia() {
-    float n1, n2, media;
+    float nota1;
+    float nota2;
+    float media;
     printf("Nota 1: ");
-    scanf("%f", &n1);
+    scanf("%f", &nota1);
+    while (nota1 > 10 || nota1 < 0) {
+        printf("Digite um valor valido: ");
+        scanf("%f", &nota1);
+    }
     printf("Nota 2: ");
-    scanf("%f", &n2);
+    scanf("%f", &nota2);
+    while (nota2 > 10 || nota2 < 0) {
+        printf("Digite um valor valido: ");
+        scanf("%f", &nota2);
+    }
 
-    media = (n1 + n2) / 2;
+    media = (nota1 + nota2) / 2;
     printf("Media Final: %.2f\n", media);
 
     if (media >= 7.0) {
@@ -62,10 +72,7 @@ int main() {
             default:
                 printf("Opcao invalida! Tente novamente.\n");
         }
-        
-        if (opcao != 3) {
-            limparTela();
-        }
-     } while (opcao != 3);
+
+     } while (opcao != 3 || opcao >3);
     return 0;
 }
