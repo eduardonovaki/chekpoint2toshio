@@ -1,7 +1,7 @@
 #include <stdio.h> // corrigindo o erro, trocando "" por <>
 
 int main() {
-    float nota1, nota2, media
+    float nota1, nota2, media; // Correção da falta de ";"
 
     printf("Digite a primeira nota: ");
     scanf("%f", &nota1);
