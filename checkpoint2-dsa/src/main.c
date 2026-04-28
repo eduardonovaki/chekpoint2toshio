@@ -20,9 +20,26 @@ void calcularDerivada() {
     }
 }
 
-int main() {
-    
+void calcularMedia() {
+    float n1, n2, media;
+    printf("Nota 1: ");
+    scanf("%f", &n1);
+    printf("Nota 2: ");
+    scanf("%f", &n2);
 
+    media = (n1 + n2) / 2;
+    printf("Media Final: %.2f\n", media);
+
+    if (media >= 7.0) {
+        printf("Classificacao: APROVADO\n");
+    } else if (media >= 4.0) {
+        printf("Classificacao: EXAME FINAL\n");
+    } else {
+        printf("Classificacao: REPROVADO\n");
+    }
+}
+
+int main() {
     
     return 0;
 }
