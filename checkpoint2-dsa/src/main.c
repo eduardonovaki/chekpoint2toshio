@@ -41,13 +41,13 @@ void calcularMedia() {
 
 int main() {
      int opcao;
-     
+    do {
         printf("\n--- SISTEMA ACADEMICO ---\n");
         printf("1. Media e Classificacao\n");
         printf("2. Derivada\n");
         printf("3. Sair\n");
         printf("Escolha: ");
         scanf("%d", &opcao);
-    
+     } while (opcao != 3);
     return 0;
 }
